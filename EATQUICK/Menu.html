@@ -1,0 +1,60 @@
+<html>
+    <body>
+        <h1>Menu</h1>
+        <p>Order from a wide variety of options</p>
+        
+        <div class="row">
+            <div class="column">
+                <img src="pizza.jpg" alt="Pizza" style="width:100%">
+                <h2>Price</h2>
+                <p>Small: $5 <button> Order </button> </p>
+                <p>Medium: $8 <button> Order </button> </p>
+                <p>Large: $10 <button> Order </button> </p>
+
+            </div>
+            <div class="column">
+                <img src="pie.jpg" alt="Pie" style="width:100%">
+                <h2>Price</h2>
+                <p>Small: $6 <button> Order </button> </p>
+                <p>Medium: $9 <button> Order </button> </p>
+                <p>Large: $12 <button> Order </button> </p>
+            </div>
+            <div class="column">
+                <img src="smoothie.jpg" alt="Smoothie" style="width:100%">
+                <h2>Price</h2>
+                <p>Small: $2 <button> Order </button> </p>
+                <p>Medium: $4 <button> Order </button> </p>
+                <p>Large: $6 <button> Order </button> </p>
+            </div>
+        </div>
+    </body>
+</html>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    img {
+        border-radius: 5%;
+    }
+
+    button {
+        float: right;
+        border-radius: 10%;
+    }
+
+</style>
