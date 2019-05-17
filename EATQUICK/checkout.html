@@ -1,6 +1,11 @@
 <html>
 
     <body>
+        <head>
+            <meta charset="utf-8">
+            <title> Checkout </title>
+            <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        </head>
         <h1>Checkout </h1>
         <div class="row">
             <div class="column">
@@ -35,6 +40,7 @@
 
     * {
         box-sizing: border-box;
+        font-family: montserrat;
     }
 
     .column {
@@ -60,12 +66,35 @@
     }
 
     button {
-        border-radius: 5px;
+        background-color: #6d4730; opacity: 0.9; filter: alpha(opacity=80);
+        border: none;
+        color: #f0ead6;
+        
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        
+        margin: 4px 2px;
+        cursor: pointer;
+	    border-radius: 10px;
+        float: right;
+
+	    -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
     }
+
+    button:hover {
+        background-color: #f0ead6;
+	    color: #6d4730;
+	    outline: solid, 2px, #6d4730;
+	    outline-offset: 200px;
+    }
+
 
     body {
         padding: 10px;
         text-align: center;
+        background-color: #f0ead6; opacity: 0.9; filter: alpha(opacity=20);
     }
 
 </style>

@@ -1,11 +1,17 @@
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title> View Menu </title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+            
     <body>
         <h1>Menu</h1>
         <p1>Order from a wide variety of options</p1>
         
         <div class="row">
             <div class="column">
-                <img src="pizza.jpg" alt="Pizza" style="width:100%">
+                <img src="mockups/pizza.jpg" alt="Pizza" style="width:100%">
                 <h2>Price</h2>
                 <p>Small: $5 <button> Order </button> </p>
                 <p>Medium: $8 <button> Order </button> </p>
@@ -13,14 +19,14 @@
 
             </div>
             <div class="column">
-                <img src="pie.jpg" alt="Pie" style="width:100%">
+                <img src="mockups/pie.jpg" alt="Pie" style="width:100%">
                 <h2>Price</h2>
                 <p>Small: $6 <button> Order </button> </p>
                 <p>Medium: $9 <button> Order </button> </p>
                 <p>Large: $12 <button> Order </button> </p>
             </div>
             <div class="column">
-                <img src="smoothie.jpg" alt="Smoothie" style="width:100%">
+                <img src="mockups/smoothie.jpg" alt="Smoothie" style="width:100%">
                 <h2>Price</h2>
                 <p>Small: $2 <button> Order </button> </p>
                 <p>Medium: $4 <button> Order </button> </p>
@@ -33,6 +39,7 @@
 <style>
     * {
         box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
     }
 
     .column {
@@ -54,6 +61,7 @@
     body {
         padding: 10px;
         text-align: center;
+        background-color: #f0ead6; opacity: 0.9; filter: alpha(opacity=20);
     }
 
     img {
@@ -61,8 +69,28 @@
     }
 
     button {
+        background-color: #6d4730; opacity: 0.9; filter: alpha(opacity=80);
+        border: none;
+        color: #f0ead6;
+        
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        
+        margin: 4px 2px;
+        cursor: pointer;
+	    border-radius: 10px;
         float: right;
-        border-radius: 5px;
+
+	    -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+
+    button:hover {
+        background-color: #f0ead6;
+	    color: #6d4730;
+	    outline: solid, 2px, #6d4730;
+	    outline-offset: 200px;
     }
 
     p {
