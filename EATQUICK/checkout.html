@@ -1,43 +1,56 @@
 <html>
 
-    <body>
-        <head>
-            <meta charset="utf-8">
-            <title> Checkout </title>
-            <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        </head>
-        <h1>Checkout </h1>
-        <div class="row">
-            <div class="column">
-                <h2>Order Review</h2>
-                <p>Items: </p>
-                <p>Total Price: </p>
-            </div>
-            
-            <div class="column">
-                <h2>Payment Details</h2>
-                <p>Card Number:</p>
-                <p>Expiry Date: </p>
-                <p>Order Number: </p>
-            </div>
-            
-            <div class="column">
-                <h2>Delivery Information</h2>
-                <p>Address:</p>
-                <p>Postal Code: </p>
-                <p>Phone Number: </p>
-            </div>
+<body>
+
+    <head>
+        <meta charset="utf-8">
+        <title> Checkout </title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+
+    <div class="topnav" id="myTopnav">
+        <ul>
+            <li class='header-logo'><img src="mockups/eatquick.jpeg" style="width:40px;height:30px;"></img>
+            <li class='header-logo'>EAT QUICK
+            <li>
+            <li><a href="#Restaurants">Our Restaurants</a></li>
+            <li><a href="#Menu">Menu </a></li>
+            <li><a href="#Order">Order </a></li>
+            <li><a href="#CheckOut">CheckOut</a></li>
+            <li><a class="active" href="#home">Home</a></li>
+        </ul>
+    </div>
+    <h1>Checkout </h1>
+    <div class="row">
+        <div class="column">
+            <h2>Order Review</h2>
+            <p>Items: </p>
+            <p>Total Price: </p>
         </div>
-        <br>
-        <div class="confirm">
-            <button> Proceed with Order </button>
+
+        <div class="column">
+            <h2>Payment Details</h2>
+            <p>Card Number:</p>
+            <p>Expiry Date: </p>
+            <p>Order Number: </p>
         </div>
-    </body>
+
+        <div class="column">
+            <h2>Delivery Information</h2>
+            <p>Address:</p>
+            <p>Postal Code: </p>
+            <p>Phone Number: </p>
+        </div>
+    </div>
+    <br>
+    <div class="confirm">
+        <button> Proceed with Order </button>
+    </div>
+</body>
 
 </html>
 
 <style>
-
     * {
         box-sizing: border-box;
         font-family: montserrat;
@@ -66,35 +79,94 @@
     }
 
     button {
-        background-color: #6d4730; opacity: 0.9; filter: alpha(opacity=80);
+        background-color: #6d4730;
+        opacity: 0.9;
+        filter: alpha(opacity=80);
         border: none;
         color: #f0ead6;
-        
+
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        
+
         margin: 4px 2px;
         cursor: pointer;
-	    border-radius: 10px;
+        border-radius: 10px;
         float: right;
-
-	    -webkit-transition-duration: 0.4s; /* Safari */
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
         transition-duration: 0.4s;
     }
 
     button:hover {
         background-color: #f0ead6;
-	    color: #6d4730;
-	    outline: solid, 2px, #6d4730;
-	    outline-offset: 200px;
+        color: #6d4730;
+        outline: solid, 2px, #6d4730;
+        outline-offset: 200px;
     }
-
 
     body {
-        padding: 10px;
+        padding: 0px;
+        margin: 0px;
         text-align: center;
-        background-color: #f0ead6; opacity: 0.9; filter: alpha(opacity=20);
+        background-color: #f0ead6;
+        opacity: 0.9;
+        filter: alpha(opacity=20);
+        display: flex;
+        flex-direction: column;
     }
 
+    .topnav {
+        width: 100%;
+        height: 45px;
+        background-color: #6d4730;
+        opacity: 0.9;
+        filter: alpha(opacity=80);
+    }
+
+    .topnav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .topnav ul li {
+        float: right;
+        padding: 0px;
+        margin-right: 10px;
+    }
+
+    .topnav ul li a {
+        display: block;
+        color: #f0ead6;
+        font-size: 15px;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 1s ease;
+        padding-top: 12px;
+        padding-bottom: 6px;
+    }
+
+    .topnav ul li.header-logo {
+        float: left;
+        cursor: pointer;
+        display: block;
+        color: #f0ead6;
+        font-size: 15px;
+        margin-right: 10px;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 1s ease;
+        padding-top: 12px;
+        padding-bottom: 6px;
+    }
+
+    .topnav ul li a:hover {
+        border-top: 4px solid #f0ead6;
+        border-bottom: 4px solid #f0ead6;
+        padding-top: 12px;
+        padding-bottom: 6px;
+        font-size: 15px;
+    }
 </style>

@@ -1,118 +1,146 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>EATQUICK</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    </head>
 
-    <body>
-	
-        <div id="home-section" class="home-section" align=center" action="/action_page.php">
-            <div class="topnav" id="myTopnav">
-                <ul>
-                    <!-- <li class='header-logo'><img src="mockups/images/logo_get.png" style="width:130px;height:50px;"></img> -->
-                    <li class='header-logo'>EAT QUICK<li>
-                    <li><a href="#Restaurants">Our Restaurants</a></li>
-                    <li><a href="#Menu">Menu </a></li>
-                    <li><a href="#Order">Order </a></li>
-                    <li><a href="#CheckOut">CheckOut</a></li>
-                    <li><a class="active" href="#home">Home</a></li>
-                </ul>
-            </div>
-        
-            <h1 class="title1" align=center style="font-size:80px">
-                What resturaunt do you want to eat from?
-            </h1>
-            <button type="button" action="/action_page.php" align=center>
-                Get Food Now!
-            </button>
+<head>
+    <title>EATQUICK</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="home-section" class="home-section" align=center" action="/action_page.php">
+        <div class="topnav" id="myTopnav">
+            <ul>
+                <li class='header-logo'><img src="mockups/eatquick.jpeg" style="width:40px;height:30px;"></img>
+                <li class='header-logo'>EAT QUICK
+                <li>
+                <li><a href="#Restaurants">Our Restaurants</a></li>
+                <li><a href="#Menu">Menu </a></li>
+                <li><a href="#Order">Order </a></li>
+                <li><a href="#CheckOut">CheckOut</a></li>
+                <li><a class="active" href="#home">Home</a></li>
+            </ul>
         </div>
 
-    </body>
+        <h1 class="title1" align=center style="font-size:80px">
+            What resturaunt do you want to eat from?
+        </h1>
+        <button type="button" action="/action_page.php" align=center>
+            Get Food Now!
+        </button>
+    </div>
+
+</body>
 
 </html>
 
 
 <style>
-
     * {
         font-family: montserrat, sans serif;
     }
-    body{
-	    margin: 0;
-	    padding: 0;
+
+    body {
+        margin: 0;
+        padding: 0;
     }
+
     h1 {
-        margin-right:100px;
-        margin-left:100px;
+        margin-right: 100px;
+        margin-left: 100px;
     }
+
     h2 {
-	    color: teal;
+        color: teal;
     }
+
     h3 {
-	    color: teal;
+        color: teal;
     }
 
 
     .title1 {
-	    transform-style: preserve-3d;
-	    transition: all 2s ease-in-out;
+        transform-style: preserve-3d;
+        transition: all 2s ease-in-out;
     }
 
 
     .home-section {
-	    background-image: url("mockups/home.jpg");
-	    background-attachment: fixed;
+        background-image: url("mockups/home.jpg");
+        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-	    background-size: cover;
-	    height: 100vh;
-	    padding: 0;
-	    margin: 0;
-	    top: 0;
+        background-size: cover;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        top: 0;
 
-	    display: flex;
-	    flex-direction: column;
-	    justify-content: center;
-	    align-items: center;
-	    color: honeydew;
-	
-	    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: honeydew;
+
+        -webkit-animation: fadein 2s;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2s;
+        /* Firefox < 16 */
+        -ms-animation: fadein 2s;
+        /* Internet Explorer */
         animation: fadein 2s;
     }
 
     @keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 
     /* Firefox < 16 */
     @-moz-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 
     /* Safari and Chrome */
     @-webkit-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 
     /* Internet Explorer */
     @-ms-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 
     .topnav {
-	    width: 100%;
-	    line-height: 30px;
-	    overflow: hidden;
-	    z-index: +1;
+        width: 100%;
+        line-height: 30px;
+        overflow: hidden;
+        z-index: +1;
     }
 
     .topnav ul {
@@ -120,23 +148,25 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #6d4730; opacity: 0.9; filter: alpha(opacity=80);
-	    position: fixed;
-	    height: 60px;
-	    width: 100%;
-	    top: 0;
+        background-color: #6d4730;
+        opacity: 0.9;
+        filter: alpha(opacity=80);
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        top: 0;
     }
 
     .topnav ul li {
         float: right;
-	    padding: 0px;
-	    margin-right: 10px;
+        padding: 0px;
+        margin-right: 10px;
     }
 
     .topnav ul li a {
         display: block;
         color: #f0ead6;
-	    font-size: 15px;
+        font-size: 15px;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -147,11 +177,11 @@
     }
 
     .topnav ul li.header-logo {
-	    float: left;
+        float: left;
         cursor: pointer;
         display: block;
         color: #f0ead6;
-	    font-size: 15px;
+        font-size: 15px;
         margin-right: 10px;
         padding: 14px 16px;
         text-decoration: none;
@@ -161,16 +191,18 @@
     }
 
     .topnav ul li a:hover {
-	    border-top: 4px solid #f0ead6;
-	    border-bottom: 4px solid #f0ead6;
+        border-top: 4px solid #f0ead6;
+        border-bottom: 4px solid #f0ead6;
         padding-top: 12px;
         padding-bottom: 6px;
-	    font-size: 15px;
+        font-size: 15px;
     }
 
 
     button {
-        background-color: #6d4730; opacity: 0.9; filter: alpha(opacity=80);
+        background-color: #6d4730;
+        opacity: 0.9;
+        filter: alpha(opacity=80);
         border: none;
         color: #f0ead6;
         padding: 20px;
@@ -180,17 +212,18 @@
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
-	    border-radius: 12px;
+        border-radius: 12px;
 
-	    -webkit-transition-duration: 0.4s; /* Safari */
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
         transition-duration: 0.4s;
     }
 
     button:hover {
         background-color: #f0ead6;
-	    color: #6d4730;  /*TEAL*/
-	    outline: solid, 2px, #6d4730;
-	    outline-offset: 200px;
+        color: #6d4730;
+        /*TEAL*/
+        outline: solid, 2px, #6d4730;
+        outline-offset: 200px;
     }
-
 </style>
