@@ -20,31 +20,38 @@
             <li><a class="active" href="#home">Home</a></li>
         </ul>
     </div>
+    <br>
+    <br>
+    <br>
     <h1>Checkout </h1>
-    <div class="row">
-        <div class="column">
-            <h2>Order Review</h2>
-            <p>Items: </p>
-            <p>Total Price: </p>
-        </div>
 
-        <div class="column">
-            <h2>Payment Details</h2>
-            <p>Card Number:</p>
-            <p>Expiry Date: </p>
-            <p>Order Number: </p>
+    <div class = "content" align="center">
+        <div class="row">
+            <div class="column">
+                <h2>Order Review</h2>
+                <p>Items: </p>
+                <p>Total Price: </p>
+            </div>
+    
+            <div class="column">
+                <h2>Payment Details</h2>
+                <p>Card Number:</p>
+                <p>Expiry Date: </p>
+                <p>Order Number: </p>
+            </div>
+            
+            <div class="column">
+                <h2>Delivery Information</h2>
+                <p>Address:</p>
+                <p>Postal Code: </p>
+                <p>Phone Number: </p>
+            </div>
         </div>
-
-        <div class="column">
-            <h2>Delivery Information</h2>
-            <p>Address:</p>
-            <p>Postal Code: </p>
-            <p>Phone Number: </p>
-        </div>
-    </div>
+    
     <br>
     <div class="confirm">
         <button> Proceed with Order </button>
+    </div>
     </div>
 </body>
 
@@ -76,6 +83,14 @@
         align-content: center;
         align-items: center;
         display: inline-block;
+    }
+
+    .content {
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        top: 0;
     }
 
     button {
@@ -118,16 +133,23 @@
 
     .topnav {
         width: 100%;
-        height: 45px;
-        background-color: #6d4730;
-        opacity: 0.9;
-        filter: alpha(opacity=80);
+        line-height: 30px;
+        overflow: hidden;
+        z-index: +1;
     }
 
     .topnav ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        overflow: hidden;
+        background-color: #6d4730;
+        opacity: 0.9;
+        filter: alpha(opacity=80);
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        top: 0;
     }
 
     .topnav ul li {
@@ -146,6 +168,7 @@
         transition: 1s ease;
         padding-top: 12px;
         padding-bottom: 6px;
+
     }
 
     .topnav ul li.header-logo {
