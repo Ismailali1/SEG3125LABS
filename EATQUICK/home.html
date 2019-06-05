@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -14,22 +15,48 @@
         <div class="topnav" id="myTopnav">
             <ul>
                 <li class='header-logo'><img src="mockups/eatquick.jpeg" style="width:40px;height:30px;"></img>
-                <li class='header-logo'>EAT QUICK
-                <li>
-                <li><a href="#Restaurants">Our Restaurants</a></li>
-                <li><a href="#Menu">Menu </a></li>
-                <li><a href="#Order">Order </a></li>
-                <li><a href="#CheckOut">CheckOut</a></li>
-                <li><a class="active" href="#home">Home</a></li>
+                <li class='header-logo'>EAT QUICK</li>
+                <li><a href="ListOfRestaurants.html">Our Restaurants</a></li>
+                <li><a href="Menu.html">Menu </a></li>
+                <li><a href="Order.html">Order </a></li>
+                <li><a href="checkout.html">CheckOut</a></li>
+                <li><a class="active" href="home.html">Home</a></li>
             </ul>
         </div>
 
-        <h1 class="title1" align=center style="font-size:80px">
+        <h1 class="title1" align="center" style="font-size:80px">
             What resturaunt do you want to eat from?
         </h1>
-        <button type="button" action="/action_page.php" align=center>
-            Get Food Now!
-        </button>
+        <form action="ListOfRestaurants.html">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        <form>
+
+        <br>
+        <br>
+        <div id = "container"></div>
+        <div>
+        <form action="/action_page.php">
+            <select name="Type of Meal">
+            <option value="breakfast">breakfast</option>
+            <option value="lunch">lunch</option>
+            <option value="dinner">dinner</option>
+            </select>
+
+        </form>
+       
+    </div>
+
+        <div>
+        <form action="/action_page.php">
+            <select name="City">
+            <option value="Ottawa">Ottawa</option>
+            <option value="Toronto">Toronto</option>
+            <option value="Montreal">Montreal</option>
+            </select>
+        </form>
+    </div>
+        
     </div>
 
 </body>
@@ -60,13 +87,53 @@
         color: teal;
     }
 
+    .input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+    }
+
+    .search-container button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .search-container button:hover {
+        background: #ccc;
+    }
+
 
     .title1 {
         transform-style: preserve-3d;
         transition: all 2s ease-in-out;
     }
 
-
+    select{
+        position: absolute;
+       
+        background-color: #6d4730;
+        opacity: 0.9;
+        filter: alpha(opacity=80);
+        border: none;
+        color: #f0ead6;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+        
+   
+    }
     .home-section {
         background-image: url("mockups/home.jpg");
         background-attachment: fixed;
@@ -91,7 +158,9 @@
         /* Internet Explorer */
         animation: fadein 2s;
     }
-
+     #container{
+         position: relative;
+     }
     @keyframes fadein {
         from {
             opacity: 0;
@@ -216,5 +285,14 @@
         /*TEAL*/
         outline: solid, 2px, #6d4730;
         outline-offset: 200px;
+    }
+
+    input {
+        padding: 20px;
+        
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
     }
 </style>

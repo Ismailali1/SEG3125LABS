@@ -1,0 +1,186 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title> Order </title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="topnav" id="myTopnav">
+            <ul>
+                <li class='header-logo'><img src="mockups/eatquick.jpeg" style="width:40px;height:30px;"></img>
+                <li class='header-logo'>EAT QUICK
+                <li><a href="ListOfRestaurants.html">Our Restaurants</a></li>
+                <li><a href="Menu.html">Menu </a></li>
+                <li><a href="Order.html">Order </a></li>
+                <li><a href="checkout.html">CheckOut</a></li>
+                <li><a class="active" href="home.html">Home</a></li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1>Shopping Cart</h1>
+    
+        <div class="content" align="center">
+            <div class="row">
+                <div class="column">
+                    <h2>Quantity</h2>
+                    <p>Items: 1 Large Pizza</p>
+                </div>
+    
+                <div class="column">
+                    <h2>Price</h2>
+                    <p>Total Price: $10</p>
+                </div>
+            
+            </div>
+    
+            <br>
+            <div class="confirm">
+                <button> Proceed to Checkout </button>
+            </div>
+        </div>
+    </body>
+
+</html>
+
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: montserrat;
+    }
+
+    .column {
+        
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    .row {
+        padding: 10px;
+        align-items: center;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .confirm {
+        align-content: center;
+        align-items: center;
+        display: inline-block;
+    }
+
+    .content {
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        justify-content: center;
+    }
+
+    button {
+        background-color: #6d4730;
+        opacity: 0.9;
+        filter: alpha(opacity=80);
+        border: none;
+        color: #f0ead6;
+
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+        float: right;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+    }
+
+    button:hover {
+        background-color: #f0ead6;
+        color: #6d4730;
+        outline: solid, 2px, #6d4730;
+        outline-offset: 200px;
+    }
+
+    body {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        background-color: #f0ead6;
+        opacity: 0.9;
+        filter: alpha(opacity=20);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topnav {
+        width: 100%;
+        line-height: 30px;
+        overflow: hidden;
+        z-index: +1;
+    }
+
+    .topnav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #6d4730;
+        opacity: 0.9;
+        filter: alpha(opacity=80);
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        top: 0;
+    }
+
+    .topnav ul li {
+        float: right;
+        padding: 0px;
+        margin-right: 10px;
+    }
+
+    .topnav ul li a {
+        display: block;
+        color: #f0ead6;
+        font-size: 15px;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 1s ease;
+        padding-top: 12px;
+        padding-bottom: 6px;
+
+    }
+
+    .topnav ul li.header-logo {
+        float: left;
+        cursor: pointer;
+        display: block;
+        color: #f0ead6;
+        font-size: 15px;
+        margin-right: 10px;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 1s ease;
+        padding-top: 12px;
+        padding-bottom: 6px;
+    }
+
+    .topnav ul li a:hover {
+        border-top: 4px solid #f0ead6;
+        border-bottom: 4px solid #f0ead6;
+        padding-top: 12px;
+        padding-bottom: 6px;
+        font-size: 15px;
+    }
+</style>

@@ -3,7 +3,7 @@
 <head>
   <title>Our Restaurants</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -15,33 +15,30 @@
       <li class='header-logo'><img src="mockups/eatquick.jpeg" style="width:40px;height:30px;"></img>
       <li class='header-logo'>EAT QUICK
       <li>
-      <li><a href="#Restaurants">Our Restaurants</a></li>
-      <li><a href="#Menu">Menu </a></li>
-      <li><a href="#Order">Order </a></li>
-      <li><a href="#CheckOut">CheckOut</a></li>
-      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="ListOfRestaurants.html">Our Restaurants</a></li>
+      <li><a href="Menu.html">Menu </a></li>
+      <li><a href="Order.html">Order </a></li>
+      <li><a href="checkout.html">CheckOut</a></li>
+      <li><a class="active" href="home.html">Home</a></li>
     </ul>
   </div>
 
   <div id="home-section" class="home-section" align=center" action="/action_page.php">
+    <br>
+    <br>
+    <br>
     <h2>Restaruants We Offer</h2>
     <table>
       <tr>
         <th>Resturaunt</th>
         <th>Average Rating</th>
+        <th>Menu</th>
         <th>cuisine</th>
+        
       </tr>
-      <tr>
-        <td>Zaki Broast And Grill</td>
-        <td><span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span></td>
-        <td>American</td>
-      </tr>
-      <tr>
-        <td>McDonalds</td>
+      
+     
+        <td> <img src="mockups/mcdonald.jpg" alt="mcdonald" style="width:40px;height:30px;"> McDonalds</td>
         <td>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
@@ -49,25 +46,34 @@
           <span class="fa fa-star"></span>
           <span class="fa fa-star"></span></td>
         </td>
+        <td>
+          <input type="button" onclick="location.href='Menu.html';" value="See Menu" />
+        </td>
         <td>American</td>
       </tr>
       <tr>
-        <td>Tim Hortons</td>
+        <td> <img src="mockups/timhortons.jpg" alt="timhortons" style="width:40px;height:30px;"> Tim Hortons</td>
         <td> <span class="fa fa-star checked"></span>
           <span class="fa fa-star "></span>
           <span class="fa fa-star "></span>
-          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span> 
           <span class="fa fa-star"></span></td>
+        </td>
+        <td>
+          <input type="button" onclick="location.href='Menu.html';" value="See Menu" />
         </td>
         <td>Canadian</td>
       </tr>
       <tr>
-        <td>Thai Express</td>
+        <td> <img src="mockups/thai.jpg" alt="thai" style="width:40px;height:30px;"> Thai Express</td>
         <td> <span class="fa fa-star "></span>
           <span class="fa fa-star "></span>
           <span class="fa fa-star "></span>
           <span class="fa fa-star"></span>
           <span class="fa fa-star"></span></td>
+          <td>
+         <input type="button" onclick="location.href='Menu.html';" value="See Menu" />
+          </td>
         </td</td> <td>Thai</td>
       </tr>
 
@@ -137,9 +143,8 @@
 
 
 
-
   table {
-    font-family: arial, sans-serif;
+    
     border-collapse: collapse;
     width: 100%;
   }
@@ -159,26 +164,47 @@
     color: orange;
   }
 
-  .home-section {
+input[type = button]{
+  background-color: #6d4730;
+        opacity: 0.9;
+        filter: alpha(opacity=80);
+        border: none;
+        color: #f0ead6;
 
-    background-attachment: fixed;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    top: 10;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+        float: right;
 
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
 
+}
+  button {
+        background-color: #6d4730;
+        opacity: 0.9;
+        filter: alpha(opacity=80);
+        border: none;
+        color: #f0ead6;
 
-  }
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+        float: right;
+
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+    }
 
   body {
     padding: 0px;
