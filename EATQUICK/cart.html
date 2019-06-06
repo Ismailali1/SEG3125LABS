@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Your Shopping Cart</title>
+		<meta charset="utf-8" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.shop.js"></script>
+	</head>
+
+<body>
+	<div class="topnav" id="myTopnav">
+		<ul>
+			<!-- <li class='header-logo'><img src="mockups/images/logo_get.png" style="width:130px;height:50px;"></img> -->
+			<li class='header-logo'><img src="mockups/eatquick.jpeg" style="width: 40px; height: 30px;"></img>
+			<li class='header-logo'>EAT QUICK</li>
+			<li><a href="ListOfRestaurants.html">Our Restaurants</a></li>
+			<li><a href="Menu.html">Menu </a></li>
+			<li><a href="Order.html">Order </a></li>
+			<li><a href="checkout.html">CheckOut</a></li>
+			<li><a class="active" href="home.html">Home</a></li>
+		</ul>
+	</div>
+
+
+<div id="site">
+	
+	<div id="content">
+		<br>
+		<br>
+		<br>
+		<h1>Your Shopping Cart</h1>
+		<form id="shopping-cart" action="cart.html" method="post">
+			<table class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Qty</th>
+					<th scope="col" colspan="2">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+			<p id="sub-total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+			<ul id="shopping-cart-actions">
+					<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+					<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+					<br>
+					<br>
+					<a href="Menu.html" class="btn">Continue Shopping</a>
+					<a href="checkout.html" class="btn">Go To Checkout</a>
+				
+			</ul>
+		</form>
+	</div>
+	
+	
+
+</div>
+
+</body>
+</html>
+
+<style>
+	* {
+		box-sizing: border-box;
+		font-family: "Montserrat", sans-serif;
+	}
+
+	.topnav {
+		width: 100%;
+		line-height: 30px;
+		overflow: hidden;
+		z-index: +1;
+	}
+
+	.topnav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #6d4730;
+		opacity: 0.9;
+		filter: alpha(opacity=80);
+		position: fixed;
+		height: 60px;
+		width: 100%;
+		top: 0;
+	}
+
+	.topnav ul li {
+		float: right;
+		padding: 0px;
+		margin-right: 10px;
+	}
+
+	.topnav ul li a {
+		display: block;
+		color: #f0ead6;
+		font-size: 15px;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		transition: 1s ease;
+		padding-top: 12px;
+		padding-bottom: 6px;
+
+	}
+
+	.topnav ul li.header-logo {
+		float: left;
+		cursor: pointer;
+	display: block;
+	color: #f0ead6;
+	font-size: 15px;
+	margin-right: 10px;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 1s ease;
+	padding-top: 12px;
+	padding-bottom: 6px;
+	}
+
+	.topnav ul li a:hover {
+	border-top: 4px solid #f0ead6;
+	border-bottom: 4px solid #f0ead6;
+	padding-top: 12px;
+	padding-bottom: 6px;
+	font-size: 15px;
+	}
+
+
+	.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+	}
+
+	.row {
+	padding: 10px;
+	}
+
+	.row::after {
+	content: "";
+	clear: both;
+	display: table;
+	}
+
+	#shopping-cart {
+  
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+	#shopping-cart td, #shopping-cart th {
+  		border: 1px solid #ddd;
+  		padding: 8px;
+	}
+
+	#shopping-cart tr:nth-child(even){background-color: #f2f2f2;}
+
+	#shoppidn-cart tr:hover {background-color: #ddd;}
+
+	#customers th {
+  		padding-top: 12px;
+  		padding-bottom: 12px;
+  		text-align: left;
+  		background-color: #4CAF50;
+  		color: white;
+	}
+
+	body {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	background-color: #f0ead6;
+	opacity: 0.9;
+	filter: alpha(opacity=20);
+	display: flex;
+	flex-direction: column;
+	
+	}
+
+	img {
+	border-radius: 10%;
+	}
+
+	button {
+	background-color: #6d4730;
+	opacity: 0.9;
+	filter: alpha(opacity=80);
+	border: none;
+	color: #f0ead6;
+
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 10px;
+
+
+	-webkit-transition-duration: 0.4s;
+	/* Safari */
+	transition-duration: 0.4s;
+	}
+
+
+	button:hover {
+	background-color: #f0ead6;
+	color: #6d4730;
+	outline: solid, 2px, #6d4730;
+	outline-offset: 200px;
+	}
+
+
+
+	p {
+	text-align: left;
+	padding-left: 10px;
+	}
+
+</style>
+
