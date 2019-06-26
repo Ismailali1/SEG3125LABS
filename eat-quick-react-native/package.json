@@ -1,0 +1,32 @@
+{
+  "name": "pizzapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "generate-keyfile": "keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000",
+    "compile-apk": "cd android ; ./gradlew assembleRelease",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^10.0.2",
+    "react": "16.4.1",
+    "react-native": "0.55.4",
+    "react-native-camera": "^1.2.0",
+    "react-native-easy-toast": "^1.1.0",
+    "react-native-elements": "^0.19.1",
+    "react-native-popup-dialog": "^0.15.0",
+    "react-native-splash-screen": "^3.1.1",
+    "react-native-vector-icons": "^4.4.0",
+    "react-navigation": "^2.11.2"
+  },
+  "devDependencies": {
+    "babel-jest": "23.4.2",
+    "babel-preset-react-native": "^2.1.0",
+    "jest": "23.5.0",
+    "react-test-renderer": "16.4.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
