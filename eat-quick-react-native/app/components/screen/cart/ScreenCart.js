@@ -63,14 +63,14 @@ class ScreenCart extends Component {
 
 const styles = StyleSheet.create({
   container: {flex: 1},
-  header: {flex: 1, backgroundColor: '#00ff00'},
+  header: {flex: 1, backgroundColor: '#d90315'},
   content: {flex: 11},
   content_empty: {flex: 1, justifyContent: 'center', alignItems: 'center'},
   button_buy: {
     ...CommonStyles.button, ...{
       flex: 0.5,
       alignItems: 'center',
-      backgroundColor: 'blue'
+      backgroundColor: 'red'
     }
   },
   button_addtocart_text: {

@@ -47,7 +47,7 @@ class ScreenRestaurants extends Component {
 
 const styles = StyleSheet.create({
   container: {flex: 1},
-  header: {flex: 1, backgroundColor: '#d90315'},
+  header: {flex: 0.15, backgroundColor: '#d90315'},
   content: {flex: 11},
 });
 

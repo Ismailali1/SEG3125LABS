@@ -28,12 +28,12 @@ class Product extends Component {
             <View style={styles.container_product_data}>
               <Text style={styles.product_name}>{this.props.name}</Text>
               <View style={styles.container_product_data_quantity}>
-                <Text style={styles.product_quantity}>Quantità: </Text>
+                <Text style={styles.product_quantity}>Quantity: </Text>
                 <AmountCounter initialValue={this.props.quantity}/>
               </View>
             <View style={styles.container_product_data_price}>
-              <Text>Prezzo: </Text>
-              <Text style={styles.product_price_content}>{this.props.price} €</Text>
+              <Text>Price: </Text>
+              <Text style={styles.product_price_content}>{this.props.price} $</Text>
             </View>
           </View>
           </View>

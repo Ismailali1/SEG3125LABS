@@ -15,11 +15,16 @@ class ScreenHome extends Component {
             <Text style={styles.mainText2}>
               Eat Quick!
             </Text>
+       
+            <Text style={styles.mainText3}>
+              Swipe to See Our Restaurants
+            </Text>
             <Text style={styles.subText}>
               Restaurant and Food Finder.
             </Text>
             <Text style={styles.description}>
               Searches the web for restaurants and shows you the best food around.
+             
             </Text>
           </ImageContent>
         </ImageBackground>
@@ -45,6 +50,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     paddingBottom: 5
   },
+  mainText3: {
+    color: 'white',
+    fontFamily: 'serif',
+    fontSize: 20,
+    fontWeight: 'bold',
+    paddingBottom: 5
+  },
   subText: {
     color: 'white',
     fontSize: 13,
@@ -53,6 +65,7 @@ const styles = StyleSheet.create({
   description: {
     color: 'white',
     fontSize: 11
+    
   }
 });
 
