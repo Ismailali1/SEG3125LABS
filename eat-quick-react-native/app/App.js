@@ -39,6 +39,7 @@ class App extends Component {
         this.toast.show('Added Item to Cart!', 2000);
       });
     }
+  
 
     let onPurchase = () => {
       this.stacknavigator.dispatch(

@@ -11,32 +11,31 @@ class ScreenRestaurants extends Component {
     super(props);
     this.state = {
       data: [
-  		{name:"Nando's"},
-  		{name:"India Palace"},
-  		{name:"Pizza Empire"},
-  		{name:"Shawarma King"}
-		]
-      
+  	{name:"Nando's"},
+  	{name:"India Palace"},
+  	{name:"Pizza Empire"},
+  	{name:"Shawarma King"}
+      ]
     };
-}
+  }
 
   render() {
     return (
-        <View style={[styles.container, this.props.style]}>
+      <View style={[styles.container, this.props.style]}>
         <Header style={styles.header}>Restaurants</Header>
         <List>
           <FlatList
 	    data={this.state.data}
             
-	    renderItem={({ item }) =>
-		<TouchableHighlight onPress={() => this.props.navigation.navigate('Menu')}>
-      			<ListItem
-                		title={`${item.name}`}
-              		/>
-		</TouchableHighlight>}
+	    renderItem={( {item } ) => (
+	      <TouchableHighlight onPress={() => this.props.navigation.navigate('Menu')}>
+      	        <ListItem title={item.name}/>
+	      </TouchableHighlight>
+	    )}
+	    keyExtractor={item => item.name}
           />
         </List>
-</View>
+      </View>
       
     );
   }

@@ -10,7 +10,7 @@ class ScreenCart extends Component {
   isListEmpty = () => {
     return (this.props.screenProps.cart.length == 0);
   }
-
+  
   onEmptyList = () => {
     if(!this.isListEmpty()) return null;
     return (
@@ -34,8 +34,16 @@ class ScreenCart extends Component {
       </TouchableOpacity>
     );
   }
-
+  
+   
+  
   render() {
+    totalPrice = 0;
+    counter = 0;
+    shoppingCart = this.props.screenProps.cart
+    for (const item of shoppingCart){
+      totalPrice += item.quantity * item.price 
+    }
     return (
       <View style={[styles.container, this.props.style]}>
         <Header style={styles.header}>Shopping Cart</Header>
@@ -43,17 +51,33 @@ class ScreenCart extends Component {
           <FlatList
             data={this.props.screenProps.cart}
             extraData={this.props.screenProps.cartListUpdateFlag}
-            renderItem={({item}) => {
-              return <CartProduct
+	    
+	    renderItem={({item}) => {
+	      counter=counter+1
+              return (
+		<View>
+		<CartProduct
                 name={item.key}
                 image={item.image}
                 price={item.price}
-                quantity={item.quantity}
-              />
+                quantity={item.quantity}/>
+		
+		
+
+
+		</View>
+		);		
             }}
+
+
+        	
+              
             contentContainerStyle={[{flexGrow: 1}, !this.isListEmpty() ? null : {justifyContent: 'center'}]}
             ListFooterComponent={this.onEmptyList}
           />
+	
+        <Text style={styles.total_price_view}>Total Price: ${totalPrice}</Text>
+	
         </View>
         {this.render_button_buy()}
       </View>
@@ -78,6 +102,20 @@ const styles = StyleSheet.create({
       color: 'white'
     }
   },
+  total_price_view: {
+      ...CommonStyles.button_text, ...{
+      textAlign: 'center',
+      backgroundColor: 'green'
+    }
+  },
+  button_remove: {
+    ...CommonStyles.button, ...{
+      flex: 0.5,
+      alignItems: 'center',
+      backgroundColor: 'red',
+      color: 'white'
+    }
+  }
 });
 
 export default ScreenCart;
